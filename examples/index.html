@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+<div class="div1">
+</div>
+</body>
+<script src="../components/table/index.js"></script>
+<script>
+
+    window.onload = function () {
+        new lubanUI.Table({
+            el: '.div1',
+            columns: [
+                {
+                    title: '交易对',
+                    dataIndex: 'asset'
+                },
+                {
+                    title: '最新价',
+                    dataIndex: 'laest'
+                },
+                {
+                    title: '涨幅',
+                    dataIndex: 'change'
+                }
+            ],
+            dataSource: [
+                {
+                    asset: 'USD/CNY',
+                    laest: '6.3745',
+                    change: '20%'
+                },
+                {
+                    asset: 'USD/CNY',
+                    laest: '6.3745',
+                    change: '20%'
+                },
+                {
+                    asset: 'USD/CNY',
+                    laest: '6.3745',
+                    change: '20%'
+                },
+                {
+                    asset: 'USD/CNY',
+                    laest: '6.3745',
+                    change: '20%'
+                }
+            ]
+        })
+    }
+</script>
+</html>
